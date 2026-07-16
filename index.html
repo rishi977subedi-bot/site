@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OM SHREE SAI ELECTRICALS &amp; ELECTRONICS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400&family=Barlow+Condensed:wght@600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ══ SEARCH OVERLAY ══ -->
+<div class="search-overlay" id="searchOverlay" onclick="if(event.target===this)closeSearch()">
+    <div class="search-box">
+        <h3>🔍 Search Products</h3>
+        <div class="search-input-row">
+            <input type="text" placeholder="Search refrigerators, fans, TVs…" id="searchInput" autofocus>
+            <button class="btn btn-blue" onclick="closeSearch()">Search</button>
+        </div>
+    </div>
+</div>
+
+<!-- ══ TOP BAR ══ -->
+<div class="topbar">
+    <div class="topbar-track">
+        <span>Explore Products From Our Site</span>
+        <span>Get Bumper Offer &amp; Discount%</span>
+        <span>OM SHREE SAI ELECTRICALS &amp; ELECTRONICS</span>
+        <span>Banganga-11, Odari, Kapilvastu</span>
+        <span>📞 9847082391</span>
+        <span>Explore Products From Our Site</span>
+        <span>Get Bumper Offer &amp; Discount%</span>
+        <span>OM SHREE SAI ELECTRICALS &amp; ELECTRONICS</span>
+        <span>Banganga-11, Odari, Kapilvastu</span>
+        <span>📞 9847082391</span>
+    </div>
+</div>
+
+<!-- ══ HEADER ══ -->
+<header class="site-header">
+    <div class="header-inner">
+        <div class="logo" onclick="showPage('home')" style="cursor:pointer">
+            <img src="https://rishiramsubedi.com.np/wp-content/uploads/2025/04/om-shree-sai-electricals-electronics.png" alt="Logo">
+            <div class="logo-text">
+                <strong>Om Shree Sai</strong>
+                <small>Electricals &amp; Electronics</small>
+            </div>
+        </div>
+
+        <nav class="main-nav" id="mainNav">
+            <button class="nav-link active" id="nav-home" onclick="showPage('home')">Home</button>
+            <div class="nav-dropdown">
+                <button class="nav-link" id="nav-shop" onclick="showPage('shop')">Shop ▾</button>
+                <div class="nav-dropdown-menu">
+                    <button onclick="showPage('shop','cooler')">Cooler</button>
+                    <button onclick="showPage('shop','fans')">Fans</button>
+                    <button onclick="showPage('shop','refrigerators')">Refrigerators</button>
+                    <button onclick="showPage('shop','speakers')">Speakers</button>
+                </div>
+            </div>
+            <button class="nav-link" id="nav-about" onclick="showPage('about')">About</button>
+            <button class="nav-link" id="nav-contact" onclick="showPage('contact')">Contact</button>
+        </nav>
+
+        <div class="header-tools">
+            <button class="tool-btn" onclick="openSearch()">🔍</button>
+            <button class="hamburger" onclick="toggleMobileNav()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+    
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav" id="mobileNav">
+        <button onclick="showPage('home'); toggleMobileNav();">Home</button>
+        <button onclick="showPage('shop'); toggleMobileNav();">Shop</button>
+        <button onclick="showPage('about'); toggleMobileNav();">About</button>
+        <button onclick="showPage('contact'); toggleMobileNav();">Contact</button>
+    </div>
+</header>
+
+<main>
+    <!-- ══ PAGE: HOME ══ -->
+    <section id="page-home" class="page active">
+        <div class="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <div class="hero-eye"><span class="bolt">⚡</span> Quality Electronics Hub</div>
+                <h1>Upgrade Your Home With <em>Om Shree Sai</em></h1>
+                <p class="hero-sub">Discover world-class brands, authentic products, and reliable local customer care right in Odari.</p>
+                <div class="hero-ctas">
+                    <button class="btn btn-amber" onclick="showPage('shop')">View Our Catalog</button>
+                    <button class="btn btn-outline-white" onclick="showPage('contact')">Get In Touch</button>
+                </div>
+                <div class="hero-stats">
+                    <div>
+                        <div class="stat-num">100%</div>
+                        <div class="stat-lbl">Authentic Brands</div>
+                    </div>
+                    <div>
+                        <div class="stat-num">Kapilvastu</div>
+                        <div class="stat-lbl">Official Store Location</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Categories and Home Details Grid -->
+        <div class="container section">
+            <div class="sec-head">
+                <span class="sec-eye">Featured Range</span>
+                <h2 class="sec-title">Explore Categories<div class="divbar"></div></h2>
+            </div>
+            <div class="cat-grid">
+                <div class="cat-card" onclick="showPage('shop','cooler')">
+                    <img src="https://rishiramsubedi.com.np/wp-content/uploads/2025/09/sample-category.jpg" alt="Coolers">
+                    <span class="cat-lbl">Coolers</span>
+                </div>
+                <div class="cat-card" onclick="showPage('shop','fans')">
+                    <img src="https://rishiramsubedi.com.np/wp-content/uploads/2025/09/sample-category.jpg" alt="Fans">
+                    <span class="cat-lbl">Fans</span>
+                </div>
+                <div class="cat-card" onclick="showPage('shop','refrigerators')">
+                    <img src="https://rishiramsubedi.com.np/wp-content/uploads/2025/09/sample-category.jpg" alt="Refrigerators">
+                    <span class="cat-lbl">Refrigerators</span>
+                </div>
+                <div class="cat-card" onclick="showPage('shop','speakers')">
+                    <img src="https://rishiramsubedi.com.np/wp-content/uploads/2025/09/sample-category.jpg" alt="Speakers">
+                    <span class="cat-lbl">Speakers</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ PAGE: SHOP ══ -->
+    <section id="page-shop" class="page">
+        <div class="page-hero">
+            <div class="page-hero-content container">
+                <h1>Our Product Catalog</h1>
+                <div class="breadcrumb">Home &gt; <span>Shop</span></div>
+            </div>
+        </div>
+        
+        <div class="container section">
+            <div class="shop-layout">
+                <!-- Shop Controls & Catalog Displays -->
+                <div class="shop-main">
+                    <div class="shop-topbar">
+                        <div class="shop-topbar-left">Showing our premium catalog items</div>
+                    </div>
+                    
+                    <div class="shop-grid">
+                        <!-- Product Card Example without Cart Actions -->
+                        <div class="product-card" onclick="showPage('product-detail')">
+                            <div class="pc-img">
+                                <span class="pc-new-badge">New</span>
+                                <img src="https://rishiramsubedi.com.np/wp-content/uploads/2025/09/sample-product.jpg" alt="Product">
+                            </div>
+                            <div class="pc-body">
+                                <span class="pc-cat">Refrigerators</span>
+                                <h3 class="pc-name">Premium Single Door Smart Refrigerator</h3>
+                                <div class="pc-prices">
+                                    <span class="pc-price">Best Local Rates Available</span>
+                                </div>
+                                <button class="pc-btn" onclick="event.stopPropagation(); showPage('contact');">Inquire Price</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ PAGE: PRODUCT DETAIL ══ -->
+    <section id="page-product-detail" class="page">
+        <div class="container section">
+            <div class="product-detail">
+                <div class="prod-gallery">
+                    <div class="prod-gallery-main">
+                        <img src="https://rishiramsubedi.com.np/wp-content/uploads/2025/09/sample-product.jpg" alt="Main View">
+                    </div>
+                </div>
+                <div class="prod-info">
+                    <span class="prod-cat">Premium Collection</span>
+                    <h1 class="prod-name">High-Performance Electronics Unit</h1>
+                    <div class="stock-badge">Official Brand Warranty Included</div>
+                    <p class="prod-desc" style="margin-top: 15px;">Experience top-tier home electronics engineered for performance, durability, and maximum energy efficiency.</p>
+                    <div class="prod-actions">
+                        <button class="btn btn-blue" onclick="showPage('contact')">Inquire via WhatsApp or Call</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ PAGE: ABOUT ══ -->
+    <section id="page-about" class="page">
+        <div class="container section">
+            <div class="about-hero-grid">
+                <div class="about-main-img">
+                    <img src="https://rishiramsubedi.com.np/wp-content/uploads/2025/10/rishiramsubedicomnp-1024x585.jpg" alt="Showroom View">
+                </div>
+                <div class="about-info">
+                    <h2>Your Trusted Electronics Partner</h2>
+                    <p>Om Shree Sai Electricals &amp; Electronics serves Kapilvastu from our modern showroom hub in Odari. We bring world-class electrical and consumer goods right to your neighborhood at prices that match any major market alternative.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ PAGE: CONTACT ══ -->
+    <section id="page-contact" class="page">
+        <div class="container section">
+            <div class="contact-grid">
+                <div class="contact-info-cards">
+                    <div class="contact-card">
+                        <div class="contact-card-icon">📞</div>
+                        <div>
+                            <div class="contact-card-title">Phone Contact</div>
+                            <div class="contact-card-val">9847082391</div>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-card-icon">📍</div>
+                        <div>
+                            <div class="contact-card-title">Our Showroom</div>
+                            <div class="contact-card-val">Banganga-11, Odari, Kapilvastu, Lumbini</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-card">
+                    <h3>Send Us a Message / Order Inquiry</h3>
+                    <div class="form-field">
+                        <label>Your Name</label>
+                        <input type="text" placeholder="Enter your full name">
+                    </div>
+                    <div class="form-field">
+                        <label>Message Detail</label>
+                        <textarea placeholder="Describe the appliance or product quote you want to get..."></textarea>
+                    </div>
+                    <button class="btn btn-blue">Submit Query</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- ══ FOOTER ══ -->
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div class="footer-col">
+            <h4>Om Shree Sai</h4>
+            <p style="font-size: 13.5px; opacity: 0.75; margin-top: 10px;">Your ultimate local outlet for official consumer technology and home electronics setups in Banganga.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a onclick="showPage('home')">Home</a></li>
+                <li><a onclick="showPage('shop')">Shop Products</a></li>
+                <li><a onclick="showPage('about')">Our History</a></li>
+                <li><a onclick="showPage('contact')">Support Info</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 OM SHREE SAI ELECTRICALS &amp; ELECTRONICS. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script>
+    // PAGE ROUTER SCRIPT
+    function showPage(pageId, filterCategory = '') {
+        document.querySelectorAll('.page').forEach(page => {
+            page.classList.remove('active');
+        });
+        const targetPage = document.getElementById('page-' + pageId);
+        if (targetPage) {
+            targetPage.classList.add('active');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.classList.remove('active');
+        });
+        const activeNavButton = document.getElementById('nav-' + pageId);
+        if (activeNavButton) {
+            activeNavButton.classList.add('active');
+        }
+    }
+
+    function toggleMobileNav() {
+        document.getElementById('mobileNav').classList.toggle('open');
+    }
+
+    function openSearch() {
+        document.getElementById('searchOverlay').classList.add('open');
+    }
+
+    function closeSearch() {
+        document.getElementById('searchOverlay').classList.remove('open');
+    }
+</script>
+</body>
+</html>
